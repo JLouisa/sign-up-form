@@ -221,3 +221,11 @@ input[type='tel']:valid {
     background-color: #5cd55c62;
     outline: none;
 }
+
+.pwdPopup {
+    margin: 0px;
+    padding: 0px;
+    color: #D55C5F;
+    position: relative;
+    bottom: 35px;
+}
