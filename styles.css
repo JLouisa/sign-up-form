@@ -228,4 +228,5 @@ input[type='tel']:valid {
     color: #D55C5F;
     position: relative;
     bottom: 35px;
+    opacity: 0;
 }

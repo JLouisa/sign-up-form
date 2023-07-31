@@ -14,8 +14,8 @@ function updateValue(e) {
 
 function updateValue2(e) {
     comp2 = e.target.value;
-    if(comp1 == comp2) {pwd2.setAttribute('style', "background-color: #5cd55c62;");pwdPop.textContent = ""} 
-    else {pwd2.setAttribute('style', "background-color: #d55c5e6b;"); pwdPop.textContent = "*Passwords do not match"}
+    if(comp1 == comp2) {pwd2.setAttribute('style', "background-color: #5cd55c62;"); pwdPop.setAttribute('style', "opacity: 0;")} 
+    else {pwdPop.setAttribute('style', "opacity: 1;"); pwd2.setAttribute('style', "background-color: #d55c5e6b;")}
   };
 
 
