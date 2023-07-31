@@ -31,7 +31,15 @@ body {
 
 }
 
+.left div img { 
+    width: 125px;
+    height: auto;    
+}
+
 .left div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     top: 225px;
     font-size: 100px;
