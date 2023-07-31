@@ -24,7 +24,7 @@ body {
     display: flex;
     flex: auto;
     justify-content: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     min-height: 1000px;
 
 }
@@ -45,7 +45,7 @@ body {
     background-color: black;
     background-image: url("./images/background.jpg");
     background-size: cover;
-    border: 1px solid rgb(222, 243, 28);
+    /* border: 1px solid rgb(222, 243, 28); */
 }
 
 .left div {
@@ -78,14 +78,14 @@ body {
 }
 
 body section {
-    border:1px solid green;
+    /* border:1px solid green; */
 }
 
 .top, .mid, .bot {
     display: flex;
     flex-direction: column;
     flex: 1;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     padding: 10px 40px;
 }
 
@@ -93,6 +93,7 @@ body section {
 .top, .bot {
     background-color: rgb(249, 250, 254);
 }
+
 /* ------------------------------------------- */
 .top {
     display: flex;
@@ -102,8 +103,9 @@ body section {
 }
 
 .mid {
+    position: relative;
     background-color: white;
-    box-shadow: black;
+    box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.2);
 }
 
 form {
@@ -119,18 +121,8 @@ input {
 }
 
 label {
-    font-weight: 700;
+    margin-bottom: 5px;
 }
-
-/* input:required {
-    border: solid red;
-} */
-
-input[type='email']:invalid {
-    border: 1px solid #D55C5F;
-    color: #D55C5F;
-}
-
 
 .send {
     margin-bottom: 30px;
@@ -164,4 +156,9 @@ a {
   .firstRow, .firstRow2 {
     display: flex;
     flex-direction: column;
+}
+
+input[type='email']:invalid {
+    border: 1px solid #D55C5F;
+    color: #D55C5F;
 }
