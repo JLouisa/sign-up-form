@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    flex: auto;
+    border: 1px solid red;
+    min-height: 1000px;
+
+}
+
+.background {
+    max-width: 100%;
+    min-height: 34%;
+    max-height: auto;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    flex-basis: 34%;
+    background-color: black;
+    background-image: url("./images/background.jpg");
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 66%;
+    justify-content: stretch;
+}
+
+body section {
+    border:1px solid green;
+}
+
+.top, .mid, .bot {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    /* padding: 50px; */
+    border: 2px solid blue;
+    padding: 40px;
+}
+
+
+.top, .bot {
+    background-color: rgb(249, 250, 254);
+}
+/* ------------------------------------------- */
+.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    font-size: 20px;
+}
+
+.mid {
+    background-color: white;
+    box-shadow: black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+
+.send {
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+    padding: 20px 60px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+a {
+    font-weight: 700;
+}
+
+.bot div div {
+    font-weight: 700;
+}
