@@ -20,26 +20,40 @@
         </div>
         <div class="mid">
             <div><h1 class="title">Let's do this!</h1></div>
-            <form action="">
-                <div>
-                    <label for="first_name">First name</label>
-                    <input type="text" id="first_name" name="first_name">
-                    <label for="first_name">Last name</label>
-                    <input type="text" id="last_name" name="last_name">
-                </div>
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone">
-                </div>
-                <div>
-                    <label for="pwd">Password</label>
-                    <input type="pwd" id="pwd" name="pwd">
-                    <label for="pwdc">Confirm Password</label>
-                    <input type="pwd" id="pwdc" name="pwdc">
-                </div>
-            </form>
+            <div>
+                <form action="https://httpbin.org/post" method="post">
+                    <div class="form-row">
+                        <div class="firstRow">
+                            <label for="first_name">FIRST NAME*</label>
+                            <input type="text" id="first_name" name="first_name" required>
+                        </div>
+                        <div class="firstRow2">
+                            <label for="first_name">LAST NAME*</label>
+                            <input type="text" id="last_name" name="last_name" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="firstRow">
+                            <label for="email">EMAIL*</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="firstRow2">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="firstRow">
+                            <label for="pwd">PASSWORD*</label>
+                            <input type="pwd" id="pwd" name="pwd" required>
+                        </div>
+                        <div class="firstRow2">
+                            <label for="pwdc">CONFIRM PASSWORD*</label>
+                            <input type="pwd" id="pwdc" name="pwdc" required>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
         <div class="bot">
             <div>

@@ -64,9 +64,9 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 225px;
+    top: 175px;
     font-size: 100px;
-    background-color: rgb(0, 0, 0, 0.4);
+    background-color: rgb(0, 0, 0, 0.6);
 }
 
 .right {
@@ -85,9 +85,8 @@ body section {
     display: flex;
     flex-direction: column;
     flex: 1;
-    /* padding: 50px; */
     border: 2px solid blue;
-    padding: 40px;
+    padding: 10px 40px;
 }
 
 
@@ -110,19 +109,38 @@ body section {
 form {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px;
+    border: 1px solid lightgray;
+}
+
+label {
+    font-weight: 700;
+}
+
+/* input:required {
+    border: solid red;
+} */
+
+input[type='email']:invalid {
+    border: 1px solid #D55C5F;
+    color: #D55C5F;
 }
 
 
-
 .send {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 button {
     background-color: #596D48;
     color: white;
     padding: 15px 70px;
+    margin-top: 20px;
     border-radius: 10px;
     font-size: 20px;
     font-weight: 700;
@@ -134,4 +152,16 @@ a {
 
 .bot div div {
     font-weight: 700;
+}
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  .firstRow, .firstRow2 {
+    display: flex;
+    flex-direction: column;
 }
